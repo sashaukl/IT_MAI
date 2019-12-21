@@ -1,18 +1,3 @@
-## попробуйте из под user3 выполнить sudo ls -l /root
-user3 is not in the sudoers file.  This incident will be reported.
-
-## почему у вас не получилось?
-Команда sudo позволяет обычным пользователям выполнять программы от имени суперпользователя со всеми его правами. Использовать команду sudo могут далеко не все пользователи, а только те, которые указаны в файле /etc/sudoers. Это сообщение об ошибке говорит буквально следующее - вашего пользователя нет в файле sudoers, а значит доступ ему к утилите будет запрещен, а об этом инциденте будет сообщено администратору.
-
-sudo nano /etc/sudoers 
-![sq1](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/Screenshot%20from%202019-11-20%2019-00-24.png)
-
-
-
-![sq2](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/cq2.png)
-![sq3](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq3.png)
-
-_______________________________________________________________________________________________________
 # Lab-processes.md
 ### Какой размер дисков?
 один диск 931,5гб
@@ -112,3 +97,43 @@ cat /proc/loadavg
  top -b -o +%CPU | head -n 10
 - запишите top 3 процессов загружающих память
 top -b -o +%MEM | head -n 10
+- запустите утилиту atop как сервис через systemd
+```
+vagrant@ubuntu-xenial:/usr/bin$ sudo nano /etc/systemd/system/atop1.service
+vagrant@ubuntu-xenial:/usr/bin$ sudo systemctl enable atop1.service
+vagrant@ubuntu-xenial:/usr/bin$ sudo systemctl start atop1.service
+\vagrant@ubuntu-xenial:/usr/bin$ sudo systemctl status atop1.service
+● atop1.service - AtopService
+   Loaded: loaded (/etc/systemd/system/atop1.service; static; vendor preset: enabled)
+   Active: active (running) since Sat 2019-12-21 22:24:34 UTC; 7s ago
+ Main PID: 3254 (atop)
+    Tasks: 1
+   Memory: 1.3M
+      CPU: 6ms
+   CGroup: /system.slice/atop1.service
+           └─3254 /usr/bin/atop
+
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:   417   0.00s   0.00s     0K     0K     0K     0K N-   - S   0% kauditd
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:   487   0.00s   0.00s     0K     0K     0K     0K N-   - S   0% iprt-VBoxWQueu
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:  2113   0.00s   0.00s     0K     0K     0K     0K N-   - S   0% kworker/0:2
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:  3073   0.00s   0.00s     0K     0K     0K     0K N-   - S   0% kworker/1:0
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:  3133   0.00s   0.00s     0K     0K     0K     0K N-   - S   0% kworker/1:2
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:  3251   0.00s   0.00s     0K     0K     0K     0K N-   - Z   0% sudo
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:  3255   0.00s   0.00s     0K     0K     0K     0K N-   - S   0% kworker/0:0
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:  3253   0.00s   0.00s     0K     0K      -      - NE   0 E   0% <systemd-tty->
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:  3252   0.00s   0.00s     0K     0K      -      - NE   0 E   0% <systemctl>
+Dec 21 22:24:34 ubuntu-xenial atop[3254]:  3251   0.00s   0.00s     0K     0K      -      - -E   0 E   0% <sudo>
+
+```
+- запустите dd на генерацию файла размер в 3 гигабайта
+```
+vagrant@ubuntu-xenial:/usr/bin$ sudo dd of=file bs=1 count=0 seek=3G
+0+0 records in
+0+0 records out
+0 bytes copied, 0.00047458 s, 0.0 kB/s
+```
+- удалите сгенеренный файл
+```
+vagrant@ubuntu-xenial:~$ rm file
+rm: remove write-protected regular file 'file'? y
+```
