@@ -5,12 +5,12 @@ user3 is not in the sudoers file.  This incident will be reported.
 Команда sudo позволяет обычным пользователям выполнять программы от имени суперпользователя со всеми его правами. Использовать команду sudo могут далеко не все пользователи, а только те, которые указаны в файле /etc/sudoers. Это сообщение об ошибке говорит буквально следующее - вашего пользователя нет в файле sudoers, а значит доступ ему к утилите будет запрещен, а об этом инциденте будет сообщено администратору.
 
 sudo nano /etc/sudoers 
-![sq1](https://github.com/sashaukl/linux_labs/blob/master/Screenshot%20from%202019-11-20%2019-00-24.png)
+![sq1](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/Screenshot%20from%202019-11-20%2019-00-24.png)
 
 
 
-![sq2](https://github.com/sashaukl/linux_labs/blob/master/cq2.png)
-![sq3](https://github.com/sashaukl/linux_labs/blob/master/sq3.png)
+![sq2](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/cq2.png)
+![sq3](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq3.png)
 
 _______________________________________________________________________________________________________
 # Lab-processes.md
@@ -21,24 +21,24 @@ ________________________________________________________________________________
 нет
 
 ### Какой размер партиций?
-![sq3](https://github.com/sashaukl/linux_labs/blob/master/sq4.png)
+![sq3](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq4.png)
 
 ### Какая таблица партционирования используется?
 gpt
 
 ### Какой диск, партция или лвм том смонтированы в /
 sda4 
-![](https://github.com/sashaukl/linux_labs/blob/master/sq5.png)
+![](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq5.png)
 
 ### Создадим сжатую файловую систему для чтения squashfs
 git clone https://gitlab.com/erlong15/mai.git
 mksquashfs mai/* mai.sqsh
-![](https://github.com/sashaukl/linux_labs/blob/master/sq6.png)
+![](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq6.png)
 
 
 ## Посмотрим информацию по файловым системам смонтированным в системе
 ### Какая файловая система примонтирована в /
-![](https://github.com/sashaukl/linux_labs/blob/master/sq7.png)
+![](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq7.png)
 
 ### С какими опциями примонтирована файловая система в /
 mount | grep sda4
@@ -53,7 +53,7 @@ Tmpfs — временное файловое хранилище
 
 ### Какая часть памяти изменялась?
 100M
-![](https://github.com/sashaukl/linux_labs/blob/master/sq8.png)
+![](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq8.png)
 
 ### Какие процессы в системе порождают дочерние процессы через fork
 systemd, gdm3, kthreadd
@@ -65,11 +65,11 @@ firefox, kthreadd
 Cчитыватеn кол-во занятой оперативной пямяти не в swap использованной в процессах всех пользователей странная потому что она в кб
 
 ## Уставновим утилиту smem и проанализируем параметр PSS в ней
-![](https://github.com/sashaukl/linux_labs/blob/master/sq9.png)
+![](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq9.png)
 
 ## Запустим приложеннный скрипт и понаблюдаем за процессами
 ### в другом терминале  отследите порождение процессов
-![](https://github.com/sashaukl/linux_labs/blob/master/sq10.png)
+![](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq10.png)
 ### отследите какие состояния вы видите у процессов
 T и Z
 ### почему появляются процессы со статусам Z
@@ -89,11 +89,11 @@ T и Z
 расскоментируем строки в скрипте
 поторим все еще раз
 отследим корректное завершение чайлда
-![](https://github.com/sashaukl/linux_labs/blob/master/sq11.png)
+![](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq11.png)
 
 ## Научимся убивать зомби процессы
 Bye
-![](https://github.com/sashaukl/linux_labs/blob/master/sq12.png)
+![](https://github.com/sashaukl/IT_MAI/blob/master/Linux/processes/sq12.png)
 
 ##Проблемы при отмонтировании директории
 - target is busy
