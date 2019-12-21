@@ -1,0 +1,8 @@
+Number alredy exists = 1 
+Someone entered number reduced by one val = ссылка для kubeadm join
+
+kubeadm join 192.168.0.100:6443 --token lfkpaw.eeocqrltih5ip8hk \
+    --discovery-token-ca-cert-hash sha256:1e265da6039d0068c7605a15781123fb799125c99ee37d721f936e356a941638
+
+
+https://clck.ru/JLkAz
