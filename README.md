@@ -9,6 +9,8 @@
   * Домашние работы
     * [Сопрограммы](https://github.com/sashaukl/IT_MAI/blob/master/Python/homeworks/coroutines.ipynb)
   * Контрольные работы
+    * [Конечные автоматы](https://github.com/sashaukl/IT_MAI/blob/master/Python/test_tasks/finite%20state%20machine/Finite_state_machine.ipynb)
+    * [Рейтинг студентов](https://github.com/sashaukl/IT_MAI/blob/master/Python/test_tasks/students%20rating/students_rating.ipynb)
     * [Pandas](https://github.com/sashaukl/IT_MAI/blob/master/Python/test_tasks/pandas/pandas.ipynb)
   * [Курсовая работа "Метод скользящего средего"](https://github.com/sashaukl/IT_MAI/blob/master/Python/Coursework/course.ipynb)
 #### R lang
