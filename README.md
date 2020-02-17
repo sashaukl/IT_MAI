@@ -20,3 +20,7 @@
     * [Заменить выбросы на среднее значение](https://github.com/sashaukl/IT_MAI/blob/master/RLang/task_2/avarage_3x_replacer.r)
 ### Распределенные вычислительные системы
  * [Achievement web service](https://github.com/sashaukl/IT_MAI/tree/master/DistributedComputing/achievement_2)
+## 2 семестр
+#### Машинное обучение
+ * Домашние работы
+    * [Титаник](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/machine_learning/homework_1)
