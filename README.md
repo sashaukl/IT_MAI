@@ -24,3 +24,9 @@
 #### Машинное обучение
  * Домашние работы
     * [Титаник](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/machine_learning/homework_1)
+#### Java
+ * Домашние работы
+    * [Пятнашки](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/java/fifteengame)
+#### Project Management
+ * Домашние работы
+    * [Обязанности раотника и ПМа](https://github.com/sashaukl/IT_MAI_MASTER/blob/master/project_management/homeworks/pm_vs_casualworker/hw2.xlsx)
