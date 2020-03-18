@@ -33,3 +33,4 @@
 #### Project Management
  * Домашние работы
     * [Обязанности раотника и ПМа](https://github.com/sashaukl/IT_MAI_MASTER/blob/master/project_management/homeworks/pm_vs_casualworker/hw2.xlsx)
+    * [Сетевая диограмма](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/project_management/homeworks/graph)
