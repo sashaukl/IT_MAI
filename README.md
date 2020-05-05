@@ -27,6 +27,7 @@
 #### Java
  * Домашние работы
     * [Пятнашки](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/java/homeworks/fifteengame)
+    * [Расчет длительности проекта](/java/homeworks/task_duration_counter)
  * Контрольные работы
     * [Неверные поля](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/java/test_tasks/size)
 
