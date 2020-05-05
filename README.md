@@ -24,6 +24,9 @@
 #### Машинное обучение
  * Домашние работы
     * [Титаник](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/machine_learning/homework_1)
+ * [Курсовая Работа "Классификация вина"](/machine_learning/coursework/UkolovAP.ipynb)
+ * Работа в классе
+    * [Random forest_vs_Desition tree](/machine_learning/randomforest_vs_desitiontree/Untitled0.ipynb)
 #### Java
  * Домашние работы
     * [Пятнашки](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/java/homeworks/fifteengame)
