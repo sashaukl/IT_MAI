@@ -29,10 +29,11 @@
     * [Random forest vs Desition tree](/machine_learning/randomforest_vs_desitiontree/Untitled0.ipynb)
 #### Java
  * Домашние работы
-    * [Пятнашки](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/java/homeworks/fifteengame)
+    * [Пятнашки](/java/homeworks/fifteengame)
     * [Расчет длительности проекта](/java/homeworks/task_duration_counter)
+    * [Репозиторий](/java/homeworks/task3_repo)
  * Контрольные работы
-    * [Неверные поля](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/java/test_tasks/size)
+    * [Неверные поля](/java/test_tasks/size)
 
 #### Project Management
  * Домашние работы
