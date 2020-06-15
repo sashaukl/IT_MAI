@@ -60,6 +60,6 @@ Broadcast: 192.168.0.15
 
 ![nginx](nginx.png)
 
-###  Блокировка запроса на 80 порт и ping
+###  Блокировка запроса на 80 порт
 ![80port](80port.png)
 ![ping](ping.png)
