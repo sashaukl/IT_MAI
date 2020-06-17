@@ -44,3 +44,8 @@
 #### Методы и фреймворки анализа потоковых данных
  * Домашние работы
     * [IoT case](https://github.com/sashaukl/IT_MAI_MASTER/blob/master/StreamingData/iot_case/README.md)
+    
+#### Сетевые протоколы / Сети TCP/IP 
+ * Лабораторные работы
+   * [Настройка сети](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/net/lab1)
+   * [OFPF](https://github.com/sashaukl/IT_MAI_MASTER/tree/master/net/lab2)
